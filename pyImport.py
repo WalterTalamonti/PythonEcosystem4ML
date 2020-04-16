@@ -2,7 +2,7 @@
 
 from pandas_datareader import data
 import matplotlib.pyplot as plt
-import pandas as pd
+import papindas as pd
 import datetime as dt
 import urllib.request, json
 import os
