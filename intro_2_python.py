@@ -60,3 +60,39 @@ last_idx = verse.rfind('you')
 count = verse.count('you')
 
 print(message.format(length, first_idx, last_idx, count))
+
+# fun with Lists and Members of
+VINIX = ['C', 'MA', 'BA', 'PG', 'CSCO', 'VZ', 'PFE', 'HD', 'INTC', 'T', 'V', 'UNH', 'WFC', 'CVX', 'BAC', 'JNJ', 'GOOGL', 'GOOG', 'BRK.B', 'XOM', 'JPM', 'FB', 'AMZN', 'MSFT', 'AAPL']
+print('GE' in VINIX)
+print('F' in VINIX)
+
+# fun with the join method
+new_str = "\n".join(["fore", "aft", "starboard", "port"])
+print(new_str)
+name = "-".join(["García", "O'Kelly"])
+print(name)
+
+#fun with the append method
+letters = ['a', 'b', 'c', 'd']
+letters.append('z')
+print(letters)
+
+
+
+
+
+
+#fun with Iterators and Generators
+lessons = ["Why Python Programming", "Data Types and Operators", "Control Flow", "Functions", "Scripting"]
+def my_enumerate(iterable, start=0):
+    count = start
+    for element in iterable:
+        yield count, element
+        count += 1
+
+for i, lesson in my_enumerate(lessons, 1):
+    print("Lesson {}: {}".format(i, lesson))
+
+# fun with Iterators and Generators
+sq_list = [x**2 for x in range(10)]  # this produces a list of squares
+sq_iterator = (x**2 for x in range(10))  # this produces an iterator of squares
